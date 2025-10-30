@@ -25,5 +25,11 @@ services:
     volumes:
       - db_data:/var/lib/mysql
 
+  mailer: 
+    image: schickling/mailcatcher 
+    ports: [1025, 1080]
+
 volumes:
   db_data:
+
+
